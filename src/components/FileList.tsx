@@ -1,11 +1,11 @@
 import type { File } from "../lib/mockData";
 import { FileItem } from "./FileItem";
 
-interface FileListProps {
+type FileListProps = {
   files: File[];
   currentFolder: string | null;
   onFolderClick: (folderId: string) => void;
-}
+};
 
 export function FileList({
   files,

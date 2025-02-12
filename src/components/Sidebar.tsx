@@ -2,9 +2,9 @@ import Link from "next/link";
 import { Folder } from "lucide-react";
 import type { File } from "../lib/mockData";
 
-interface SidebarProps {
+type SidebarProps = {
   files: File[];
-}
+};
 
 export function Sidebar({ files }: SidebarProps) {
   const rootFolders = files.filter(

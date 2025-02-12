@@ -1,10 +1,10 @@
 import { File, Folder } from "lucide-react";
 import type { File as FileType } from "../lib/mockData";
 
-interface FileItemProps {
+type FileItemProps = {
   file: FileType;
   onFolderClick: (folderId: string) => void;
-}
+};
 
 export function FileItem({ file, onFolderClick }: FileItemProps) {
   const Icon = file.type === "folder" ? Folder : File;

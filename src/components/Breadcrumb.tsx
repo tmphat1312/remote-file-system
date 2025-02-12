@@ -1,10 +1,10 @@
 import { ChevronRight, Home } from "lucide-react";
 import type { File } from "../lib/mockData";
 
-interface BreadcrumbProps {
+type BreadcrumbProps = {
   items: File[];
   onFolderClick: (folderId: string | null) => void;
-}
+};
 
 export function Breadcrumb({ items, onFolderClick }: BreadcrumbProps) {
   return (
