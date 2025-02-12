@@ -21,7 +21,7 @@ export function Sidebar({ files }: SidebarProps) {
               href={`/folder/${folder.id}`}
               className="flex items-center text-gray-700 hover:text-gray-900"
             >
-              <Folder className="mr-2" size={18} />
+              <Folder className="me-2" size={18} role="presentation" />
               {folder.name}
             </Link>
           </li>

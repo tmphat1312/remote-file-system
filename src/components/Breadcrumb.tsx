@@ -15,14 +15,18 @@ export function Breadcrumb({ items, onFolderClick }: BreadcrumbProps) {
             onClick={() => onFolderClick(null)}
             className="inline-flex items-center text-sm font-medium text-gray-400 hover:text-gray-200"
           >
-            <Home className="mr-2 h-4 w-4" />
+            <Home className="me-2 size-4" size={26} role="presentation" />
             My Drive
           </button>
         </li>
         {items.map((item) => (
           <li key={item.id}>
             <div className="flex items-center">
-              <ChevronRight className="h-6 w-6 text-gray-400" />
+              <ChevronRight
+                className="size-6 text-gray-400"
+                role="presentation"
+                size={24}
+              />
               <button
                 onClick={() => onFolderClick(item.id)}
                 className="ml-1 text-sm font-medium text-gray-400 hover:text-gray-200 md:ml-2"

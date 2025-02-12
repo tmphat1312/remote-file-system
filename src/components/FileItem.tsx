@@ -20,7 +20,7 @@ export function FileItem({ file, onFolderClick }: FileItemProps) {
       onClick={handleClick}
       className={`flex cursor-pointer items-center rounded p-2 hover:bg-gray-700 ${file.type === "folder" ? "text-blue-400" : "text-gray-300"}`}
     >
-      <Icon className="mr-2" size={18} />
+      <Icon className="me-2" size={18} role="presentation" />
       <span className="grow">{file.name}</span>
       {file.type === "file" && (
         <>

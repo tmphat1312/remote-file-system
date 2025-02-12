@@ -11,7 +11,7 @@ export function UploadButton() {
       onClick={handleUpload}
       className="flex items-center rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600"
     >
-      <Upload className="mr-2" size={18} />
+      <Upload className="me-2" size={18} role="presentation" />
       Upload
     </button>
   );
